@@ -1,0 +1,178 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 50px;
+  padding: 0;
+  background: linear-gradient(to right, #ffffe0, #e6e7e8 50%, #ffffe0);
+}
+
+.kasen {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+.menu {
+  line-height: 4;
+}
+
+section img {
+  display: block;
+  margin: 2em auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.head1 {
+  width: 80%;
+  height: 470px;
+}
+
+table {
+  margin: auto;
+}
+
+p {
+  line-height: 3;
+  padding-top: 2em;
+}
+
+.sec5 p,
+.sec6 p {
+  line-height: normal;
+  padding-top: 0;
+}
+
+h2 {
+  text-align: center;
+  background-color: #0095d9;
+  opacity: 0.8;
+  width: 280px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 30% 70% 35% 65% / 50% 50% 50% 50%;
+  margin: 0 auto;
+  font-family: "Nico Moji";
+  color: #fcf16e;
+  letter-spacing: 0.1em;
+}
+
+.sec1 {
+  margin-top: 4em;
+  margin-bottom: 2em;
+  margin-right: 9em;
+  margin-left: 9em;
+}
+
+.sec2 {
+  margin-top: 3em;
+  margin-bottom: 4em;
+  margin-right: 9em;
+  margin-left: 9em;
+}
+
+.sec3 {
+  margin-top: 6em;
+  margin-bottom: 6em;
+  margin-right: 9em;
+  margin-left: 9em;
+}
+
+.sec4 {
+  margin-top: 6em;
+  margin-bottom: 6em;
+  margin-right: 9em;
+  margin-left: 9em;
+}
+
+.sec5 {
+  margin-top: 6em;
+  margin-bottom: 6em;
+  margin-right: 9em;
+  margin-left: 9em;
+}
+
+.sec6 {
+  margin-top: 6em;
+  margin-bottom: 6em;
+  margin-right: 9em;
+  margin-left: 9em;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+.image-grid img {
+  width: 300px;
+  height: auto;
+  display: block;
+}
+
+.hamburger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  cursor: pointer;
+  z-index: 10; /* メニューより前に表示 */
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #333;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #0095d9;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 5;
+  font-family: "Nico Moji";
+}
+
+ul {
+  padding-left: 0;
+}
+
+.menu a {
+  color: #fcf16e;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.menu.open {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
